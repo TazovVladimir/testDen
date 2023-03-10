@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+ul,li{
+  list-style: none;
+}
+body{
+  background-color: #171717;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+.btn{
+  background-color: #007DFFDE;
+  transition: opacity 200ms ease;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 8px 35px 8px 35px;
+  border-radius: 10px;
+}
+.btn:hover{
+  opacity: 70%;
+  cursor: pointer;
+}
+input{
+  border: none;
+  border-radius: 10px;
+  background-color: #2F2F2FDE;
+  border: #2F2F2FDE 2px solid;
+  opacity: 87%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 5px;
+  padding-left:28px;
+}
+input::placeholder{
+  font-size: 16px;
+  font-weight: 400;
+  color: #ABABAB;
+}
+input:focus{
+  outline: none !important;
+  border-color:  #686868;
+  background-color: #414141 !important;
+}
+
+input[type='search']{
+  background-color: #2F2F2FDE;
+  transition: background-color 400ms ease;
+}
+input#search::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type='search']:hover{
+  background-color: #414141;
+}
+
+.header_search_el{
+  display: block;
+}
+.header_search_el i{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 10px;
+  z-index: 1;
+  color: #fff;
+}
+.btn_add_to_list{
+  margin-top: 10px;
+  position: relative;
+  background-color: #2F2F2F;
+  opacity: 87%;
+  border-radius: 10px;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  transition: opacity 200ms ease;
+}
+.btn_add_to_list:hover{
+  opacity: 70%;
+  cursor: pointer;
+}
+h2{
+  color: #fff;
+  font-weight: 400;
+}
+
+
+.preload {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: RGBA(0, 0, 0, 0.5);
+  z-index: 9999999;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.preload_item {
+  display: block;
+  position: absolute;
+  color: #fff;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.search_filter{
+  opacity: 60%;
+  font-weight: 200;
+}
+
+
+.rating {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  background-color: rgb(6, 111, 223);
+  border-radius: 0 5px 5px 0;
+  width: 85px;
+  height: 35px;
+}
+
+.rating_value {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.rating_value::before{
+  content: '★';
+  margin-right: 7px;
+}
